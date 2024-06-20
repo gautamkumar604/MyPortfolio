@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(4, 1, 48);
+    font-family: "Poppins", sans-serif;
+}
+nav span{
+    color:rgb(137, 35, 181);
+    /* color:blueviolet; */
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+nav .left{
+    font-size: 1.6rem;
+    /* position: absolute; */
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    background-color: rgb(10, 10, 72);
+    color: white;
+    font-size: 18px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+}
+nav ul li{
+    list-style: none;
+    margin: 23px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#section1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 23px;
+    color: white;
+}
+.leftsection{
+    width: 35%;
+    /* background-color: rebeccapurple; */
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin: 50px 0px;
+    padding: 100px 0px;
+   /* text-align: center; */
+}
+.rightsection{
+    /* background-color: rebeccapurple; */
+    width: 35%;
+}
+.rightsection img{
+    width: 100%;
+    margin-top: 25px;
+}
