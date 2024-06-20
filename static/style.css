@@ -3,18 +3,20 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --violet:rgb(160, 41, 210);
+}
 body{
     background-color: rgb(4, 1, 48);
     font-family: "Poppins", sans-serif;
 }
-nav span{
-    color:rgb(137, 35, 181);
-    /* color:blueviolet; */
+span{
+    color:var(--violet);
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 nav .left{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     /* position: absolute; */
 }
 nav{
@@ -30,7 +32,7 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 400px;
+    margin-left: 300px;
 }
 nav ul li{
     list-style: none;
@@ -40,7 +42,11 @@ nav ul li a{
     color: white;
     text-decoration: none;
 }
+nav ul li a:hover{
+    color:var(--violet);
+}
 
+/* Main content */
 #section1{
     display: flex;
     justify-content: space-around;
@@ -49,18 +55,49 @@ nav ul li a{
 }
 .leftsection{
     width: 35%;
-    /* background-color: rebeccapurple; */
-    font-size: 1.9rem;
-    font-weight: bold;
+    font-size: 1.6rem;
     margin: 50px 0px;
     padding: 100px 0px;
    /* text-align: center; */
 }
+button{
+    background-color:rgba(255, 255, 255, 0.929);
+    border: 2px solid var(--violet);
+    border-radius: 8px;
+    padding: 4px;
+    margin: 30px 0px;
+    cursor: pointer;
+}
+.button1{
+    margin-right: 70px;
+}
+button a{
+    color: var(--violet);
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 2px;
+    font-weight: bold;
+}
+button:hover{
+    border: 2px solid white;
+}
 .rightsection{
-    /* background-color: rebeccapurple; */
     width: 35%;
 }
 .rightsection img{
     width: 100%;
     margin-top: 25px;
+}
+
+/* footerSection */
+.foot{
+    margin-top: 25px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-size: 0.85rem;
 }
