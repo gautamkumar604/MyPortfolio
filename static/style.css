@@ -64,7 +64,7 @@ nav ul li a:hover{
 button{
     background-color: rgb(43 46 130 / 46%);
     border: 2px solid var(--violet);
-    border-radius: 11px;
+    border-radius: 25px;
     height: 42px;
     padding: 8px;
     margin: 23px 0px;
@@ -77,7 +77,7 @@ button{
 button a{
     color: var(--violet);
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     padding: 4px;
     font-weight: bold;
 }
@@ -99,15 +99,14 @@ button:hover{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    background-color: rgb(4, 0, 61);
-    height: 120vh;
+    background-color: rgb(114, 107, 214);
+    height: 100vh;
     max-width: 85vw;
     margin: auto;
     align-items: center;
 }
 #section2 hr{
-    width: 60vw;
-    margin-top: -35px;
+    width: 72vw;
 }
 .text_content{
     display: flex;
@@ -137,10 +136,50 @@ button:hover{
     margin-top: -35px;
 }
 .box_sizing{
-    background-color: rgb(191, 166, 214);
+    /* background-color: rgb(191, 166, 214); */
     width: 40vw;
     height: 85vh;
     margin: 4px;
+}
+.left_of_section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.image{
+    padding-right: 10vw ;
+    /* border: 2px solid black; */
+    
+}
+.left_of_section2 img{
+    width: 25vw;
+    border-radius: 50vh;
+    padding: 10px;
+}
+.btn{
+    width: 36vw;
+    /* border: 2px solid beige; */
+    /* background-color: white; */
+}
+.btn button{
+   margin-left: 22px;
+    padding: 8px;
+}
+.social-acc{
+    width: 36vw;
+    margin-top: 10px;
+    /* border:2px solid red; */
+    /* background-color: white; */
+
+}
+.social-acc img{
+    width: 30px;
+    background-color: white;
+    margin: 10px 14px;
+    padding: 2px;
+    box-shadow: 0px 0px 18px 6px rgba(238, 236, 243, 0.385);
+
 }
 .right_of_section2{
    padding: 0px 35px;
@@ -230,6 +269,25 @@ button:hover{
     width: 75%;
     height: 15px;
     background-color: #22692c;
+}
+/*contact section*/
+#section3{
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    background-color: rgb(145, 140, 207);
+    height: 100vh;
+    max-width: 85vw;
+    margin: auto;
+}
+.contact{
+    margin-left: 20px;
+    padding: 8px;
+}
+.contact h1{
+   text-decoration: underline;
+   font-size: 1.8rem;
 }
 /* footerSection */
 .foot{
