@@ -4,7 +4,7 @@
     padding: 0;
 }
 :root{
-    --violet:rgb(161, 86, 193);
+    --violet:rgb(149, 0, 255);
 }
 body{
     background-color: rgb(4, 0, 61);
@@ -61,28 +61,28 @@ nav ul li a:hover{
     padding: 100px 4px;
    /* text-align: center; */
 }
-button{
-    background-color: rgb(43 46 130 / 46%);
-    border: 2px solid var(--violet);
-    border-radius: 25px;
-    height: 42px;
-    padding: 8px;
-    margin: 23px 0px;
+.btn1{
+}
+.btn1 button{
+    font-size: 1.1rem;
+    border: 2px solid indigo;
+    background-color: white;
+    border-radius: 15px;
+    width:120px;
+    height: 40px;
+    margin-top: 22px;
+    box-shadow: 0px 0px 2px 1px white;
+    margin-bottom: 20px;
+    color: indigo;
+}
+.btn1 button:hover{
+    border: 2px solid white;
+    background-color: indigo;
+    color: white;
     cursor: pointer;
-    box-shadow: 2px 2px 5px 2px black;
 }
 .button1{
-    margin-right: 70px;
-}
-button a{
-    color: var(--violet);
-    text-decoration: none;
-    font-size: 1.05rem;
-    padding: 4px;
-    font-weight: bold;
-}
-button:hover{
-    border: 2px solid white;
+    margin-right: 35px;
 }
 .right_of_section1{
     /* background-color: brown; */
@@ -99,7 +99,7 @@ button:hover{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    background-color: rgb(114, 107, 214);
+    /* background-color: rgb(114, 107, 214); */
     height: 100vh;
     max-width: 85vw;
     margin: auto;
@@ -114,10 +114,11 @@ button:hover{
     align-items: center;
     flex-direction: column;
     color: rgba(255, 255, 255, 0.778);
+    margin-top: 12px;
 }
 .text_content h1{
    font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: var(--violet);
     margin-top: -8px;
 }
@@ -133,7 +134,7 @@ button:hover{
     color: black;
     width: 80vw;
     height: 90vh;
-    margin-top: -35px;
+    margin-top: 10px;
 }
 .box_sizing{
     /* background-color: rgb(191, 166, 214); */
@@ -142,33 +143,24 @@ button:hover{
     margin: 4px;
 }
 .left_of_section2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    text-align: center;
 }
 .image{
-    padding-right: 10vw ;
+    margin: 10px;
     /* border: 2px solid black; */
-    
 }
 .left_of_section2 img{
     width: 25vw;
     border-radius: 50vh;
-    padding: 10px;
+    margin-top: 8px;
 }
-.btn{
-    width: 36vw;
-    /* border: 2px solid beige; */
-    /* background-color: white; */
-}
-.btn button{
-   margin-left: 22px;
-    padding: 8px;
+.button3{
+    margin-right: 35px;
 }
 .social-acc{
     width: 36vw;
     margin-top: 10px;
+    margin-left: 15px;
     /* border:2px solid red; */
     /* background-color: white; */
 
@@ -176,13 +168,15 @@ button:hover{
 .social-acc img{
     width: 30px;
     background-color: white;
-    margin: 10px 14px;
+    margin: 10px 12px;
     padding: 2px;
-    box-shadow: 0px 0px 18px 6px rgba(238, 236, 243, 0.385);
-
+    box-shadow: 0px 0px 8px 6px white;
+}
+.social-acc img:hover{
+    box-shadow: 0px 0px 8px 6px rgb(0, 0, 0);
 }
 .right_of_section2{
-   padding: 0px 35px;
+   padding: 0px 25px;
    
 }
 /* .right_of_section2 h1{
@@ -193,7 +187,7 @@ button:hover{
 } */
 .right_of_section2 h3{
     font-weight: 500;
-    margin-top: 25px;
+    margin-top: 10px;
     color: white;
 }
 .right_of_section2 h3 span{
@@ -272,22 +266,92 @@ button:hover{
 }
 /*contact section*/
 #section3{
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    background-color: rgb(145, 140, 207);
+    /* background-color: rgb(31, 23, 142); */
+    color: white;
     height: 100vh;
     max-width: 85vw;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.contact{
-    margin-left: 20px;
-    padding: 8px;
+#section3 hr{
+    width: 70vw;
+    background-color: red;
 }
-.contact h1{
-   text-decoration: underline;
-   font-size: 1.8rem;
+#contact_head{
+    text-align: center;
+    margin-top: 12px;
+
+}
+#contact_head p{
+    font-size: 0.7rem;
+    margin-bottom: -8px;
+}
+#contact_head h1{
+    font-size: 2rem;
+    color: var(--violet);
+    margin-bottom: 4px;
+}
+#contact-box{
+    display: flex;
+    /* border: 2px solid black; */
+    width: 80vw;
+    height: 85vh;
+    margin: 10px 0px;
+    padding: 4px;
+}
+.boxes{
+    width: 40vw;
+    height: 82vh;
+    /* background-color: #42b020; */
+    margin: 8px;
+}
+.left-box{
+    width: 55vw;
+}
+.left-box form p{
+   background-color: #2d40ce;
+   text-align: center;
+   height: 7vh;
+  padding-top: 12px;
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+.left-box form div{
+    margin-left: 4.5vw;
+}
+.left-box form label{
+  font-size: 1.2rem;
+  margin: 0px 3px;
+}
+.left-box form input{
+   width: 35vw;
+   height: 3vh;
+   border: 2px solid indigo;
+   border-radius: 8px;
+   padding: 4px;
+   margin: 2px 0px;
+
+}
+.left-box form textarea{
+    width: 35vw;
+    height: 6vh;
+    border: 2px solid indigo;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 4px 0px;
+ 
+ }
+ .btn3{
+    /* background-color: #e70ea9; */
+    width: 35.5vw;
+ }
+.btn3 button{
+    margin-left: 100px;
+}
+.right-box{
+
 }
 /* footerSection */
 .foot{

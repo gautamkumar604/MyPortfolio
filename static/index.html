@@ -32,8 +32,10 @@
                     <div>And I am a <span> Web Devloper </span>and<Br>
                         <span id="element"></span>
                     </div>
-                    <button type="button" class="button1"><a href="">Projects</a></button>
-                    <button type="button" class="button2"><a href="">Contact Me</a></button>
+                    <div class="btn1">
+                        <button type="button" class="button1">Projects</button>
+                        <button type="button" class="button2">Contact Me</button>
+                    </div>
                 </div>
                 <div class="right_of_section1">
                     <img src="/static/bg.png" alt="">
@@ -52,9 +54,9 @@
                              <div class="image">
                                  <img src="/gautam1.jpg" alt="">
                              </div>
-                             <div class="btn">
-                                <button type="button" class="button1"><a href="">Download cv</a></button>
-                                <button type="button" class="button2"><a href="">Experience</a></button>
+                             <div class="btn1">
+                                <button type="button" class="button3">Download cv</button>
+                                <button type="button" class="button4">Experience</button>
                              </div>
                              <div class="social-acc">
                                  <a href="https://www.github.com" target="_blank"><img src="/github.png" alt="" class="img0"></a>
@@ -122,12 +124,49 @@
             </section>
             <hr>
             <section id ="section3">
-                <div class="contact">
+                <div id="contact_head">
                     <p>This is my contact</p>
                     <h1>Contacts Us</h1>
                 </div>
                 <hr>
-                <hr>
+                <div id ="contact-box">
+                    <div class="left-box boxes">
+                        <form action="">
+                            <p>Contact me</p>
+                            <div>
+                                <label for="fname">First name</label><br>
+                                <input type="text"  id="fname" name="firstname" placeholder="Enter your first name">
+                            </div>
+                            <div>
+                                <label for="lname">Last name</label><br>
+                                <input type="text" id="lname" name="lastname" placeholder="Enter your Last name">
+                            </div>
+                            <div>
+                                <label for="dob">Date Of Birth</label><br>
+                                <input type="date" id="dob" name="dateofbirth" placeholder="Enter your date of birth">
+                            </div>
+                            <div>
+                                <label for="mobile_no">Mobile no</label><br>
+                                <input type="number" id="mobile_no" name="mobileno" placeholder="Enter your mobile no">
+                            </div>
+                            <div>
+                                <label for="email">Email</label><br>
+                                <input type="email" id="email" name="email" placeholder="Enter your email">
+                            </div>
+                            <div>
+                                <label for="comment">Massase</label><br>
+                                <textarea id="comment" name="comment" placeholder="Enter massage:"></textarea>                                    
+                            </div>
+                            <div class="btn1 btn3">
+                                <button type="button" class="button4">Submit</button>
+                                <button type="button" class="button5">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="right-box boxes">
+
+                    </div>
+                </div>
             </section>
             <!-- <div id="section4"></div> -->
         </main>
@@ -142,7 +181,7 @@
 
   <!-- Setup and start animation! -->
   <script>
-    var typed = new Typed('#element', {
+    var typed = new Typed('#element',{
       strings: ['#Web Designer', '#Software Devloper','#Data Science'],
       typeSpeed: 80,
     });
