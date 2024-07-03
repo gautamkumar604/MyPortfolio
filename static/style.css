@@ -2,18 +2,27 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root{
-    --violet:rgb(149, 0, 255);
+    --maincolor:rgb(5, 132, 223);
+    /* --maincolor:rgb(149, 0, 255); */
+    --bodycolor:rgb(3,0,57);
 }
 body{
-    background-color: rgb(4, 0, 61);
+    background-color:var(--bodycolor);
+    /* background-color: rgb(4, 0, 61); */
     font-family: "Poppins", sans-serif;
+    text-decoration: none;
 }
 span{
-    color:var(--violet);
+    color:var(--maincolor);
     font-weight: bold;
     font-size: 1.8rem;
+}
+header{
+    position: sticky;
+    top: 0.1px;
 }
 nav .left{
     font-size: 1.4rem;
@@ -24,7 +33,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 55px;
-    background-color: rgb(10, 10, 72);
+    background-color: rgba(10, 10, 72, 0.956);
     color: white;
     font-size: 18px;
 }
@@ -43,7 +52,7 @@ nav ul li a{
     text-decoration: none;
 }
 nav ul li a:hover{
-    color:var(--violet);
+    color:var(--maincolor);
 }
 
 /* Main content */
@@ -65,20 +74,21 @@ nav ul li a:hover{
 }
 .btn1 button{
     font-size: 1.1rem;
-    border: 2px solid indigo;
-    background-color: white;
+    border: 2px solid var(--maincolor);
+    background-color: transparent;
     border-radius: 15px;
     width:120px;
     height: 40px;
     margin-top: 22px;
-    box-shadow: 0px 0px 2px 1px white;
+    margin-right: 23px;
     margin-bottom: 20px;
-    color: indigo;
+    color: var(--maincolor);
 }
 .btn1 button:hover{
-    border: 2px solid white;
-    background-color: indigo;
-    color: white;
+    /* border: 2px solid white; */
+    /* background-color: indigo; */
+    box-shadow: 0px 0px 5px 1px var(--maincolor);
+    /* color: white; */
     cursor: pointer;
 }
 .button1{
@@ -113,13 +123,13 @@ nav ul li a:hover{
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    color: rgba(255, 255, 255, 0.778);
+    color: white;
     margin-top: 12px;
 }
 .text_content h1{
    font-weight: bold;
     font-size: 2rem;
-    color: var(--violet);
+    color: var(--maincolor);
     margin-top: -8px;
 }
 .text_content p{
@@ -153,9 +163,10 @@ nav ul li a:hover{
     width: 25vw;
     border-radius: 50vh;
     margin-top: 8px;
+    margin-right: 10px;
 }
 .button3{
-    margin-right: 35px;
+    /* margin-right: 25px; */
 }
 .social-acc{
     width: 36vw;
@@ -181,7 +192,7 @@ nav ul li a:hover{
 }
 /* .right_of_section2 h1{
     text-align: center;
-    border-bottom: 1px solid var(--violet);
+    border-bottom: 1px solid var(--maincolor);
     margin-top: 12px;
     text-decoration: underline;
 } */
@@ -206,8 +217,8 @@ nav ul li a:hover{
 }
 .skill-head{
     width: fit-content;
-    border-bottom: 2px solid var(--violet);
-    color: var(--violet);
+    border-bottom: 2px solid var(--maincolor);
+    color: var(--maincolor);
 }
 .skill-content{
     margin-top: -4px;
@@ -290,7 +301,7 @@ nav ul li a:hover{
 }
 #contact_head h1{
     font-size: 2rem;
-    color: var(--violet);
+    color: var(--maincolor);
     margin-bottom: 4px;
 }
 #contact-box{
@@ -298,62 +309,95 @@ nav ul li a:hover{
     /* border: 2px solid black; */
     width: 80vw;
     height: 85vh;
-    margin: 10px 0px;
+    margin: 60px 0px;
     padding: 4px;
 }
 .boxes{
+    position: relative;
+    top: -2vh;
     width: 40vw;
-    height: 82vh;
+    height: 80vh;
     /* background-color: #42b020; */
     margin: 8px;
 }
-.left-box{
-    width: 55vw;
+.left-box form{
+    display: inline-flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    align-items: start;
+    width: 40vw;
+    height: 70vh;
 }
-.left-box form p{
-   background-color: #2d40ce;
+.left-box p{
+   background-color: var(--maincolor);
+   color:  var(--bodycolor);
+   border-radius: 4px;
    text-align: center;
+   width: 38vw;
+   margin-left: 1vw;
    height: 7vh;
-  padding-top: 12px;
+  padding-top: 6px;
   font-size: 1.6rem;
   margin-bottom: 12px;
 }
 .left-box form div{
-    margin-left: 4.5vw;
+    display: inline-flex;
+    justify-content: center;
+}
+.left-box form div div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    position: relative;
+    /* left: 2vw; */
 }
 .left-box form label{
   font-size: 1.2rem;
-  margin: 0px 3px;
+  /* margin: 0px 3px; */
 }
-.left-box form input{
-   width: 35vw;
-   height: 3vh;
-   border: 2px solid indigo;
-   border-radius: 8px;
-   padding: 4px;
-   margin: 2px 0px;
+.left-box form input , textarea{
+   width: 17vw;
+   position: relative;
+   top: -25px;
+   height: 8vh;
+   background-color: transparent;
+   border: 1px solid var(--maincolor);
+   border-radius: 3px;
+   padding: 6px;
+   font-size: 1rem;
+   color: white;
+   margin-bottom: -15px;
 
 }
 .left-box form textarea{
-    width: 35vw;
-    height: 6vh;
-    border: 2px solid indigo;
-    border-radius: 8px;
-    padding: 4px;
-    margin: 4px 0px;
+    width: 36vw;
+    height: 20vh;
+    /* border: 2px solid indigo; */
+    /* border-radius: 8px; */
+    /* padding: 4px; */
+    /* margin: 4px 0px; */
  
+ }
+ .fname-fn{
+    margin-bottom: 23px;
  }
  .btn3{
     /* background-color: #e70ea9; */
     width: 35.5vw;
+    margin-top: 20px;
  }
 .btn3 button{
     margin-left: 100px;
+    background-color: transparent;
 }
 .right-box{
+    
+}
+
+/* footerSection */
+#footer{
 
 }
-/* footerSection */
 .foot{
     margin-top: 25px;
     height: 35px;
