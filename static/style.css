@@ -16,7 +16,8 @@
     /* --bodycolor:rgb(3,0,57); */
     --bodycolor: rgb(3, 0, 57);
 }
-html{
+
+html {
     font-size: 100%;
     overflow-x: hidden;
 }
@@ -30,6 +31,7 @@ span {
     color: var(--maincolor);
     /* font-weight: bold; */
 }
+
 header {
     position: sticky;
     top: 0.1px;
@@ -38,22 +40,26 @@ header {
     font-size: 1.4rem;
     color: white;
 }
+
 nav .left {
     font-size: 1.6rem;
 }
-nav .right{
+
+nav .right {
     position: relative;
     left: 5rem;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 55px;
+    height: 9vh;
     background-color: rgba(10, 10, 72, 0.956);
     font-size: 18px;
 }
-nav a{
+
+nav a {
     color: white;
 }
 
@@ -81,30 +87,38 @@ nav ul li a:hover {
 /* Main content */
 #home {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     color: white;
-    min-height: 100vh;
+    min-height: 91vh;
 }
-.sa-left-right{
+
+.sa-left-right {
     /* background-color: brown; */
-    width: 35vw;
-    height: 35vh;
-   
+    width: 38vw;
+    height: 81vh;
+    padding: 10px;
+
 }
 
 .left_of_home {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
-.sa-left-right .control{
+.right_of_home .control{
     /* border: 2px solid red; */
 }
 
-.btn1 {}
+.btn1 {
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    margin-top: 30px;
+}
 
 .btn1 button {
     font-size: 1.1rem;
@@ -113,9 +127,6 @@ nav ul li a:hover {
     border-radius: 15px;
     width: 120px;
     height: 40px;
-    margin-top: 22px;
-    margin-right: 23px;
-    margin-bottom: 20px;
     color: var(--maincolor);
 }
 
@@ -128,12 +139,11 @@ nav ul li a:hover {
     margin-right: 35px;
 }
 
-.right_of_home{
- height: 70.5vh;
+.right_of_home {
 }
 
 .right_of_home img {
-    width: 90%;
+   width: 35vw;
 }
 
 /* section 2 about content */
@@ -142,7 +152,7 @@ nav ul li a:hover {
     justify-content: space-evenly;
     flex-direction: column;
     /* background-color: rgb(114, 107, 214); */
-    height: 105vh;
+    height: 100vh;
     max-width: 85vw;
     margin: auto;
     align-items: center;
@@ -158,76 +168,103 @@ nav ul li a:hover {
     align-items: center;
     flex-direction: column;
     color: white;
-    margin-top: 12px;
+    margin-top: 6px;
 }
 
 .text_content h1 {
-    font-weight: bold;
+    margin-bottom: 4px;
     font-size: 2rem;
     color: var(--maincolor);
-    margin-top: -8px;
 }
 
 .text_content p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
 }
 
 .about-container {
     /* background-color: brown; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* align-content: center; */
     align-items: center;
     width: 80vw;
     height: 95vh;
+    /* flex-wrap: wrap; */
     /* margin-top: 10px; */
 }
 
 .box_sizing {
-    /* background-color: rgb(191, 166, 214); */
-    width: 40vw;
-    height: 90vh;
+    /* background-color: rgb(106, 30, 176); */
+    width: 35vw;
+    height: 80vh;
     margin: 4px;
 }
 
 .left_of_section2 {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center;  */
 }
 
 .image {
-    margin: 10px;
+    /* margin: 10px; */
     /* border: 2px solid black; */
 }
 
 .left_of_section2 img {
-    width: 25vw;
+    width: 28vw;
     border-radius: 50vh;
-    margin-top: 8px;
-    margin-right: 20px;
+    /* margin-top: 8px; */
+    /* margin-right: 20px; */
 }
 
-.button3 {
-    /* margin-right: 25px; */
-}
-
-.social-media{
-    width: 36vw;
+.btn2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 28rem;
     margin-top: 10px;
-    margin-left: 15px;
+}
+.btn2 button {
+    font-size: 1.1rem;
+    border: 2px solid var(--maincolor);
+    background-color: transparent;
+    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+    color: var(--maincolor);
+}
+.btn2 button:hover {
+    box-shadow: 0px 0px 5px 1px var(--maincolor);
+    cursor: pointer;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 28vw;
+    margin-top: 10px;
+    /* margin-left: 15px; */
     /* border:2px solid red; */
     /* background-color: white; */
 
 }
-.social-media a i{
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
+
+.social-media a i {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
     color: var(--maincolor);
     border: 2px solid var(--maincolor);
     border-radius: 60px;
     background-color: transparent;
     margin: 10px 12px;
-    padding-top: 6px;
+    padding-top: 6.5px;
+    padding-left: 6.5px;
     /* box-shadow: 0px 0px 8px 6px white; */
 }
 
@@ -239,10 +276,10 @@ nav ul li a:hover {
 }
 
 .right_of_section2 {
-    padding: 0px 25px;
+    /* padding: 35px 20px 20px 20px; */
     display: flex;
     flex-direction: column;
-
+    padding-top: 2.5rem;
 }
 
 /* .right_of_section2 h1{
@@ -252,13 +289,14 @@ nav ul li a:hover {
     text-decoration: underline;
 } */
 .right_of_section2 h3 {
+    font-size: 1.4rem;
     font-weight: 500;
     margin-top: 10px;
     color: white;
 }
 
 .right_of_section2 h3 span {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -364,14 +402,17 @@ nav ul li a:hover {
 }
 
 #contact_head {
-    text-align: center;
-    margin-top: 12px;
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 6px;
 }
 
 #contact_head p {
-    font-size: 0.7rem;
-    margin-bottom: -8px;
+    font-size: 0.8rem;
+
 }
 
 #contact_head h1 {
@@ -382,11 +423,16 @@ nav ul li a:hover {
 
 #contact-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
     /* border: 2px solid black; */
+
     width: 80vw;
     height: 85vh;
-    margin: 60px 0px;
-    padding: 4px;
+    /* margin: 60px 0px;
+    padding: 4px; */
+    margin-top: 4rem;
 }
 
 /* #contact-box .img{
@@ -420,9 +466,9 @@ nav ul li a:hover {
     width: 38vw;
     margin-left: 1vw;
     height: 7vh;
-    padding-top: 6px;
+    padding-top: 10px;
     font-size: 1.6rem;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
 }
 
 .left-box form div {
@@ -441,13 +487,14 @@ nav ul li a:hover {
 .left-box form label {
     font-size: 1.2rem;
     /* margin: 0px 3px; */
+    margin-top: 8px;
 }
 
 .left-box form input,
 textarea {
     width: 17vw;
     position: relative;
-    top: -25px;
+    top: -17px;
     height: 8vh;
     background-color: transparent;
     border: 1px solid var(--maincolor);
@@ -470,7 +517,7 @@ textarea {
 }
 
 .fname-fn {
-    margin-bottom: 23px;
+    margin-bottom: 18px;
 }
 
 .btn3 {
@@ -488,7 +535,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: auto;
+    /* margin: auto; */
     padding-left: 5rem;
 
 }
@@ -500,11 +547,12 @@ textarea {
 
 .dialog h3 {
     color: var(--maincolor);
-    font-size: 1.9rem
+    font-size: 1.9rem;
+    margin-bottom: 0.8rem;
 }
 
 .my-info {
-    margin-bottom: 11rem;
+    margin-bottom: 13rem;
     color: var(--maincolor);
 }
 
@@ -526,3 +574,50 @@ textarea {
     background-color: black;
     font-size: 0.85rem;
 }
+
+
+
+/* ************************************************ */
+/* for resposive */
+@media screen and ( max-width: 1300px ) {
+    body{
+        background-color:red;
+    }
+    .right_of_home img{
+        width: 40vw;
+        /* margin-top: 4rem; */
+        padding-top: 4rem;
+    }
+    .right_of_section2{
+        padding-top: 4.5rem;
+    }
+    .my-info{
+        margin-bottom: 14.3rem; 
+    }
+    
+}
+/* @media screen and ( max-width: 1150px ) {
+    body{
+        background-color:rgb(0, 255, 30);
+    }
+    .social-media{
+        width: 24vw;
+        margin-left: 4rem;
+    }
+    .right_of_section2{
+        padding: 20px 15px 15px 15px;
+    }
+    .right-box {
+        margin-bottom: 2rem;
+    }
+    
+} */
+/* @media screen and ( max-width: 980px ) {
+    body{
+        background-color:rgb(238, 255, 0);
+    }
+    .right_of_section2{
+        padding: 10px 10px 10px 10px;
+    }
+    
+} */
