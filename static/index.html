@@ -6,73 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This_is_my_personal_portfolio_website_with_legal_information</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div id="container">
-        <!-- THIS IS MY HEADER -->
-        <header>
-            <nav>
-                <div class="left"><span>Gautam's </span>portfolios</div>
-                <div class="right">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <!-- tHIS MY MAIN CONTENT DIVIDED IN SECTIONS -->
-        <main>
-            <!-- THIS IS FIRST SECTION -->
-            <section id="section1">
-                <!-- THIS SUB SECTIONS OF FIRST SECTION -->
-                <div class="left_of_section1 sa-left-right">
-                    <div class="control">Hello<span>...</span>
-                        <div>My name is <span>Gautam Kumar</span></div>
-                        <div>And I am a <span> Web Devloper </span>and<Br>
-                            <span id="element"></span>
-                        </div>
-                        <div class="btn1">
-                            <button type="button" class="button1">Download cv</button>
-                            <button type="button" class="button2">Contact me</button>
-                        </div>
+    <!-- THIS IS MY HEADER -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/home"><span>My</span>portfolios</a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="/home" class="active">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- tHIS MY MAIN CONTENT DIVIDED IN SECTIONS -->
+    <main>
+    <!-- THIS IS FIRST SECTION -->
+        <section id="home">
+            <!-- THIS SUB SECTIONS OF FIRST SECTION -->
+            <div class="home-content">
+                <div>
+                    Hello<span>...</span><br>
+                    My self <span>Gautam Kumar</span><br>
+                    I am a <span> Web Devloper </span>and<Br>
+                    <span id="element"></span>
+                    <div class="home-btn">
+                        <button type="button" class="button1">Download cv</button>
+                        <button type="button" class="button2">Contact me</button>
                     </div>
                 </div>
-                <!-- THIS SUB SECTIONS OF FIRST SECTION -->
-                <div class="right_of_section1 sa-left-right">
-                    <div class="control">
-                        <img src="/static/bg.png" alt="">
-                    </div>
-                </div>
-            </section>
-        </main>
+            </div>
+            <div class="home-img">
+                <img src="bg.png" alt="" class="img">
+            </div>
+        </section>
         <hr>
-        <!-- THIS IS SECOND SECTION OF MAIN CONTENT -->
-        <section id="section2">
+        <section id="about">
             <!-- THIS TEXT CONTAINER FOR ABOUT SECTION HEADING -->
-            <div class="text_content">
+            <div class="about-head">
                 <p>This my about section</p>
                 <h1>About Me</h1>
+                <hr>
             </div>
-            <hr>
             <!-- THIS IS ABOUT SECTION OF SECOND SECTION -->
-            <div class="about-container">
+            <div class="about-content">
                 <!-- LEFT SUB SECTION OF ABOUT SECTION -->
-                <div class="left_of_section2 box_sizing">
-                    <div class="image">
-                        <img src="/gautam1.jpg" alt="">
+                <div class="about-1 box_sizing">
+                    <div class="img">
+                        <img src="gautam1.jpg" alt="">
                     </div>
-                    <div class="btn1">
+                    <div class="btn2">
                         <button type="button" class="button3">Projects</button>
                         <button type="button" class="button4">Experience</button>
                     </div>
-                    <div class="social-acc">
-                        <a href="https://www.github.com" target="_blank"><img src="/github.png" alt="" class="img0"></a>
+                    <div class="social-media">
+                        <!-- <a href="https://www.github.com" target="_blank"><img src="/github.png" alt="" class="img0"></a>
                         <a href="https://www.linkedin.com/feed/" target="_blank"><img src="/linkedin.png" alt=""
                                 class="img1"></a>
                         <a href="https://www.facebook.com/home.php" target="_blank"><img src="/facebook.png" alt=""
@@ -81,68 +81,76 @@
                                 class="img3"></a>
                         <a href="https://web.telegram.org/" target="_blank"><img src="/telegram.png" alt=""
                                 class="img4"></a>
-                        <a href="https://x.com/home" target="_blank"><img src="/twitter.png" alt="" class="img5"></a>
+                        <a href="https://x.com/home" target="_blank"><img src="/twitter.png" alt="" class="img5"></a> -->
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
                     </div>
                 </div>
                 <!-- RIGHT SUB SECTION OF ABOUT SECTION -->
-                <div class="right_of_section2 box_sizing">
+                <div class="about-2 box_sizing">
                     <!-- <h1>About Me</h1> -->
-                    <h3>I'm Gautam Kumar <span>Devloper</span> and <br><span>Programmer</span></h3>
-                    <p>I Am Gautam Kumar, A Passionate Freelancer Bringing You Programming And Design From The Future.
-                        My Expertise Is Developing Next-Level Websites And Web Applications Including Full Frontend
-                        Design with backend?</p>
+                    <div class="right-box-1">
+                         <h3>I'm Gautam Kumar <span>Devloper</span> and <span>Programmer</span></h3>
+                         <p>I Am Gautam Kumar, A Passionate Freelancer Bringing You Programming And Design From The Future.
+                             My Expertise Is Developing Next-Level Websites And Web Applications Including Full Frontend
+                             Design with backend?</p>
+                    </div>
+                <!-- <div class="about-3 box_sizing"> -->
+                    <div class="skill-head">
+                        <h4>Skills</h4>
+                    </div>
                     <div class="skills">
-                        <div class="skill-head">
-                            <h4>Skills</h4>
-                        </div>
                         <div class="skill-content">
                             <p>Html</p>
                             <div class="skill-bar bar-box">
-                                <div class="skills-content html">85%<div>
-                                    </div>
+                                <div class="skills-content html">85%</div>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <p>Css</p>
+                            <div class="skill-bar bar-box">
+                                <div class="skills-content css">70%</div>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <p>JavaScript</p>
+                            <div class="skill-bar bar-box">
+                                <div class="skills-content JavaScript">45%</div>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <p>Node.js</p>
+                            <div class="skill-bar bar-box">
+                                <div class="skills-content node-js">30%</div>
+                            </div>
+                        </div>
+                            <div class="skill-content">
+                                <p>Java</p>
+                                <div class="skill-bar bar-box">
+                                    <div class="skills-content java">80%</div>
                                 </div>
-                                <div class="skill-content">
-                                    <p>Css</p>
-                                    <div class="skill-bar bar-box">
-                                        <div class="skills-content css">70%<div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-content">
-                                            <p>JavaScript</p>
-                                            <div class="skill-bar bar-box">
-                                                <div class="skills-content JavaScript">45%<div>
-                                                    </div>
-                                                </div>
-                                                <div class="skill-content">
-                                                    <p>Node.js</p>
-                                                    <div class="skill-bar bar-box">
-                                                        <div class="skills-content node-js">30%<div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="skill-content">
-                                                            <p>Java</p>
-                                                            <div class="skill-bar bar-box">
-                                                                <div class="skills-content java">80%<div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="skill-content">
-                                                                    <p>C++</p>
-                                                                    <div class="skill-bar bar-box">
-                                                                        <div class="skills-content cpp">82%<div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="skill-content">
-                                                                            <p>Python</p>
-                                                                            <div class="skill-bar bar-box">
-                                                                                <div class="skills-content python">75%
-                                                                                    <div>
-                                                                                    </div>
-                                                                                </div>
-
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                            </div>
+                            <div class="skill-content">
+                                <p>C++</p>
+                                <div class="skill-bar bar-box">
+                                    <div class="skills-content cpp">82%</div>
+                                </div>
+                            </div>
+                            <div class="skill-content">
+                                <p>Python</p>
+                                <div class="skill-bar bar-box">
+                                    <div class="skills-content python">75%</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
         </section>
+    </main>
         <hr>
         <!-- THIS IS MY THIRD SECTION OF MAIN SECTION -->
         <section id="section3">
@@ -150,7 +158,7 @@
                 <p>This is my contact</p>
                 <h1>Contacts Us</h1>
             </div>
-            <hr>
+            <!-- <hr> -->
             <div id="contact-box">
                 <!-- THIS IS LEFT CONTAINER OF CONTACT BOX -->
                 <div class="left-box boxes">
@@ -158,7 +166,7 @@
                     <form action="">
                         <div>
                             <div>
-                                <label for="fname" class="fname-fn">First name</label>
+                                <label for="fname" class="fname-fn">First name</label><br>
                                 <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
                             </div>
                             <div>
@@ -182,11 +190,11 @@
                                 <textarea id="comment" name="comment" placeholder="Enter massage:"></textarea>
                             </div>
                         </div>
-                        <div class="btn1 btn3">
-                            <button type="button" class="button4">Send Me</button>
-                            <button type="button" class="button5">Cancel</button>
-                        </div>
                     </form>
+                    <div class="btn3">
+                        <button type="button" class="button5">Send Me</button>
+                        <button type="button" class="button6">Cancel</button>
+                    </div>
                 </div>
                 <!-- THIS IDS RIGHT CONTAINER OF DIALOGUE AND ADDRESS INFORMATION -->
                 <div class="right-box boxes">
