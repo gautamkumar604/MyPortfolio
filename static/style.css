@@ -75,15 +75,11 @@ nav ul li a {
     border-radius: 4px;
     transition: all 0.2s ease;
 }
-/* nav ul li a.active , */
 nav ul li a:hover{
     color: var(--maincolor);
     cursor: pointer;
 }
 @media screen and (max-width: 950px){
-    body{
-        /* background-color: #996c8c; */
-    }
     nav ul{
         position: fixed;
         top: 8vh;
@@ -151,13 +147,6 @@ main{
     margin: 1%;
     border: 2px solid green; */
 }
-.home-content div{
-}
-/* .home-img{
-    border: 2px solid green;
-    width: 48%;
-    margin: 1%;  
-} */
 .home-img img{
     width: 500px;
 }
@@ -380,7 +369,7 @@ main{
     width: 400px;
 }
 .skill-head {
-    width: fit-content;
+    /* width: fit-content; */
     font-size: 1.4rem;
     color: var(--maincolor);
 }
@@ -526,9 +515,9 @@ main{
     align-items: center;
 }
 @media screen and (max-width: 400px){
-    #section3{
+    /* #section3{
         display: none;
-    }
+    } */
 }
 
 #section3 hr {
@@ -593,6 +582,7 @@ main{
     margin-top: 1.5rem;
 }
 
+
 .left-box p {
     background-color: var(--maincolor);
     color: var(--bodycolor);
@@ -604,7 +594,6 @@ main{
     padding: 3px;
     font-size: 1.7rem;
 }
-
 .left-box form div {
     display: inline-flex;
     justify-content: center;
@@ -692,7 +681,7 @@ textarea {
     color: var(--maincolor);
 }
 /* footerSection */
-#footer {}
+/* #footer {} */
 
 .foot {
     margin-top: 25px;
