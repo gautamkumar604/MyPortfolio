@@ -258,7 +258,7 @@ main{
         padding: 6px;
      }
 } */
-@media only screen and(max-width:400px) {
+/* @media only screen and(max-width:400px) {
     body{
         background-color: #22692c;
     }
@@ -266,7 +266,7 @@ main{
         width: 100px;
         display: none;
     }
-}
+} */
 
 /* ***************************************************************** */
 /* section 2 about content */
