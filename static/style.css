@@ -136,16 +136,11 @@ main{
     color: white;
     width: 100%;
     min-height: 92vh;
-    /* border: 2px solid red;
-    margin: auto; */
 }
 .home-content{
     font-size: 1.8rem;
     line-height: 6vh;
     font-weight: 500;
-    /* width: 48%;
-    margin: 1%;
-    border: 2px solid green; */
 }
 .home-img img{
     width: 500px;
@@ -231,6 +226,9 @@ main{
     }
 }
 @media only screen and (max-width: 360px) and (max-height:750px){
+    /* body{
+        background-color: #22692c;
+    } */
     .home-img img{
         width: 300px;
     }
@@ -243,7 +241,11 @@ main{
         padding: 6px;
      }
 }
-@media only screen and (max-width: 360px) and (max-height:890px){
+/* @media only screen and (max-width: 360px) and (max-height:890px){
+    
+    body{
+        background-color: #22692c;
+    }
     .home-img img{
         width: 300px;
     }
@@ -255,8 +257,16 @@ main{
         width: 100px;
         padding: 6px;
      }
+} */
+@media only screen and(max-width:400px) {
+    body{
+        background-color: #22692c;
+    }
+    .home-img img{
+        width: 100px;
+        display: none;
+    }
 }
-
 
 /* ***************************************************************** */
 /* section 2 about content */
@@ -266,31 +276,34 @@ main{
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    margin-top: -15px;
+    /* margin-top: -15px; */
 }
 .about-head {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
     color: white;
+    margin-bottom: -10px;
 }
 .about-head p{
     font-size: 0.8rem;
-    margin-top: 8px;
-    margin-bottom: -8px;
+    margin-top: 4px;
+    margin-bottom: -4px;
 }
 .about-head h1{
     font-size: 2rem;
     color: var(--maincolor);
 }
-.about-head hr {
+#about hr {
+    margin: auto;
     width: 70vw;
 }
 .about-content{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin-top: 22px;
 }
 .box_sizing{
     margin: 0px 50px;
@@ -514,15 +527,8 @@ main{
     flex-direction: column;
     align-items: center;
 }
-@media screen and (max-width: 400px){
-    /* #section3{
-        display: none;
-    } */
-}
-
 #section3 hr {
     width: 70vw;
-    background-color: red;
 }
 
 #contact_head {
@@ -531,133 +537,100 @@ main{
     align-items: center;
     flex-direction: column;
     color: white;
-    margin-top: 6px;
 }
 
 #contact_head p {
     font-size: 0.8rem;
+    margin-top: 4px;
 
 }
 
 #contact_head h1 {
+    margin-top: -4px;
     font-size: 2rem;
     color: var(--maincolor);
-    margin-bottom: 4px;
 }
-
-#contact-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    /* border: 2px solid black; */
-    width: 80vw;
-    height: 85vh;
-    /* margin: 60px 0px;
-    padding: 4px; */
-    margin-top: 4rem;
-}
-
-/* #contact-box .img{
-    position: relative;
-    top: 20vh;
-    right: 18vw;
-} */
-.boxes {
-    /* position: relative;
-    top: -2vh; */
-    width: 40vw;
-    height: 80vh;
-    /* background-color: #42b020; */
-    margin: 8px;
-}
-
-.left-box form {
-    display: inline-flex;
-    flex-direction: column;
+#contact-box{
     /* border: 2px solid red; */
-    align-items: start;
-    width: 40vw;
-    height: 55vh;
-    margin-top: 1.5rem;
+    width: 36vw;
+    margin-top: 8vh;
 }
-
-
-.left-box p {
-    background-color: var(--maincolor);
-    color: var(--bodycolor);
-    border-radius: 4px;
+.h_box{
+    background-color:var(--maincolor);
     text-align: center;
-    width: 38vw;
-    margin-left: 1vw;
-    height: 7vh;
-    padding: 3px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
-.left-box form div {
-    display: inline-flex;
-    justify-content: center;
-}
-
-.left-box form div div {
+.form{
     display: flex;
     flex-direction: column;
-    margin-left: 2vw;
+    width: 100%;
 }
-
-.left-box form label {
-    font-size: 1.2rem;
-    margin-bottom: -1.5rem;
-    margin-top: 0.8rem;
+.form .row1,.row2{
+    display: flex;
+    flex-wrap: wrap;
 }
-
-.left-box form input,
-textarea {
+.row div{
+    margin-top: 20px;
+}
+.row div input,textarea{
     width: 17vw;
-    position: relative;
     height: 8vh;
-    background-color: transparent;
-    border: 1px solid var(--maincolor);
-    border-radius: 3px;
-    padding: 6px;
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.599);
-
-}
-
-.left-box form textarea {
-    width: 36vw;
-    height: 20vh;
-}
-.left-box .btn3{
-    width: 32rem;
-    text-align: center;
-    padding: 5px;
-    margin-top: 2vh;
-    margin-left: 2vw;
-    width: 36vw;
-}
-.button6{
-    margin-left: 2vw;
-}
-.button5{
-    margin-right: 2vw;
-}
-.btn3 button {
-    font-size: 1.1rem;
     border: 2px solid var(--maincolor);
+    border-radius: 4px;
+    padding: 4px;
+    color: black;
     background-color: transparent;
-    border-radius: 15px;
-    width: 120px;
-    height: 40px;
-    color: var(--maincolor);
-   
 }
-.btn3 button:hover {
-    box-shadow: 0px 0px 5px 1px var(--maincolor);
-    cursor: pointer;
+.row div textarea{
+    width: 36vw;
+    height: 18vh;
+    
 }
-
+.lname,.email{
+    margin-left: 2vw;
+}
+.btn3{
+   display: flex;
+   justify-content: center;
+}
+.btn3 button{
+   font-size: 1.2rem;
+   padding: 8px;
+   margin: 12px;
+   background-color: var(--maincolor);
+   border: none;
+   border-radius: 4px;
+}
+@media only screen and (max-width:820px){
+    #contact-box{
+        width: 80vw;
+    }
+    .row div input,textarea{
+        width: 80vw;
+        height: 6vh;
+    }
+    .row div textarea{
+        width: 80vw;
+        
+    }
+    .lname,.email{
+        margin-left: 0vw;
+    }
+}
+@media only screen and (min-width:1024px)and(min-height:1300px){
+    #contact-box{
+        width: 56vw;
+    }
+    .row div input,textarea{
+        width: 28vw;
+        height: 4vh;
+    }
+    .row div textarea{
+        width: 56vw;
+        
+    }
+}
+    
 .right-box {
     display: none;
     flex-direction: column;
@@ -681,7 +654,9 @@ textarea {
     color: var(--maincolor);
 }
 /* footerSection */
-/* #footer {} */
+#footer {
+    display: none;
+}
 
 .foot {
     margin-top: 25px;
